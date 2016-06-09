@@ -6,18 +6,8 @@ Also supports making groups exclusive (radio instead of checkbox).
 
 ![preview](preview.png)
 
-Demos: [Basic](http://ismyrnow.github.io/Leaflet.groupedlayercontrol/example/basic.html) |
-[Advanced](http://ismyrnow.github.io/Leaflet.groupedlayercontrol/example/advanced.html)
-
-## Installation
-
-Include the compressed JavaScript and CSS files located in the `/dist` folder.
-
-This project is also available via bower and jspm:
-
-```
-bower install leaflet-groupedlayercontrol
-```
+Demos: [Basic](http://tsrman.github.io/Leaflet.groupedlayercontrol/example/basic.html) |
+[Advanced](http://tsrman.github.io/Leaflet.groupedlayercontrol/example/advanced.html)
 
 ## Usage
 
@@ -48,8 +38,8 @@ For added functionality, pass options when creating the layer control.
 var options = {
   // Make the "Landmarks" group exclusive (use radio inputs)
   exclusiveGroups: ["Landmarks"],
-  // Show a checkbox next to non-exclusive group labels for toggling all
-  groupCheckboxes: true
+  // Show a checkbox for this groups
+  groupCheckboxes: ["Random"]
 };
 
 L.control.groupedLayers(baseLayers, groupedOverlays, options).addTo(map);
