@@ -10,6 +10,7 @@
 <body>
   <div id="map" style="width: 600px; height: 400px"></div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="../src/leaflet.groupedlayercontrol.js"></script>
   <script src="exampledata.js"></script>
@@ -36,7 +37,7 @@
       // Make the "Landmarks" group exclusive (use radio inputs)
       exclusiveGroups: ["Landmarks"],
       // Show a checkbox next to non-exclusive group labels for toggling all
-      groupCheckboxes: true
+      groupCheckboxes: ["Random"]
     };
 
     // Use the custom grouped layer control, not "L.control.layers"
