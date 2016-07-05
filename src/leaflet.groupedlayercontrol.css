@@ -9,7 +9,7 @@
   margin-bottom: .5em;
 }
 
-.leaflet-control-layers-group .groupHeader {
+.leaflet-control-layers-list .leaflet-control-layers-group .groupHeader {
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -17,3 +17,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.leaflet-control-layers-names {
+  margin-left: 3px;
+}
+
+.leaflet-control-layers-selector {
+  margin-left: 20px;
+}

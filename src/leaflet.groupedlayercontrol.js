@@ -235,7 +235,8 @@ L.Control.GroupedLayers = L.Control.extend({
         L.DomEvent.on(input, 'click', this._onInputClick, this);
 
         var name = document.createElement('span');
-        name.innerHTML = ' ' + obj.name;
+        name.className = 'leaflet-control-layers-names';
+        name.innerHTML = obj.name;
 
         label.appendChild(input);
         label.appendChild(name);
